@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <style type="text/css">
+    ul li{
+      list-style : none;
+    }
+  </style>
+  <title>my weather app</title>
+</head>
+<body>
+  <section class="main">
+  <div class="container">
+    <h1>weather app 2017</h1>
+    <div class="inner">
+      <form id="weather">
+        <input type="text" placeholder="city" id="city" />
+        <input type="text" placeholder="country" id="country" />
+        
+       <!-- <a href="#" onclick="getWeather()">get weather</a> -->
+		    <button type="button" onclick="getWeather()">Get Weather </button>
+		     <button type="button" onclick="getFiveDayWeather()">Get Weather for next five days </button>
+      </form>
+        <div id="display" class="displayWeather">
+		   <label id="weatherLbl"></label>
+		   <label id="description"></label>
+		   <img id="icon"/>
+       <!-- your weather data and images goes in here -->
+   </div>
+   <div id="displayfiveday" class="displayfiveday">
+     <ul>
+       <li>Firstdate</li>
+       <li id="firstdate"></li>
+       <li>First Min Temperature</li>
+       <li id="firstmin"></li>
+       <li>First Max Temperature</li>
+       <li id="firstmax"></li>
+       
+       <li>seconddate</li>
+       <li id="seconddate"></li>
+       <li>Second Min Temperature</li>
+       <li id="secondmin"></li>
+       <li>Second Max Temperature</li>
+       <li id="secondmax"></li>
+       
+       <li>thirddate</li>
+       <li id="thirddate"></li>
+       <li>Third Min Temperature</li>
+       <li id="thirdmin"></li>
+       <li>Third Max Temperature</li>
+       <li id="thirdmax"></li>
+       
+        <li>fourthdate</li>
+       <li id="fourthdate"></li>
+       <li>Fourth Min Temperature</li>
+       <li id="fourthmin"></li>
+       <li>Fourth Max Temperature</li>
+       <li id="fourthmax"></li>
+       
+        <li>fifthdate</li>
+       <li id="fifthdate"></li>
+       <li>Fifth Min Temperature</li>
+       <li id="fifthmin"></li>
+       <li>Fifth Max Temperature</li>
+       <li id="fifthmax"></li>
+       
+     </ul>
+     
+     
+   </div>
+    </div>
+  </div>
+  </section>
+    <script src="app.js"></script>
+</body>
+</html>
