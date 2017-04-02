@@ -56,8 +56,8 @@ fetch(`${urlWeather}`)
 				 	//var date=new Date(dt);
                     
 				 	 console.log(data.list[i].temp.max);
-				 	 var min_f_temperature = data.list[0].temp.min;
-				 	 var max_f_temperature = data.list[0].temp.max;
+				 	 var min_f_temperature = data.list[0].temp.min + " \xB0C";
+				 	 var max_f_temperature = data.list[0].temp.max + " \xB0C";
 				 	dt = dt.setDate(dt.getDate()+0);
 				 	var firstdate=new Date(dt);
 				 	console.log(data.list[i].temp.min);
@@ -72,8 +72,8 @@ fetch(`${urlWeather}`)
 				 	dt = dt.setDate(dt.getDate()+1);
 				 	var seconddate=new Date(dt);
 				 	document.getElementById("seconddate").innerHTML = seconddate;
-				 	document.getElementById("secondmin").innerHTML = min_s_temperature;
-				 	document.getElementById("secondmax").innerHTML = max_s_temperature;
+				 	document.getElementById("secondmin").innerHTML = min_s_temperature + " \xB0C";
+				 	document.getElementById("secondmax").innerHTML = max_s_temperature + " \xB0C";
 				 	
 				 	 var min_t_temperature = data.list[2].temp.min;
 				 	 var max_t_temperature = data.list[2].temp.max;
@@ -83,8 +83,8 @@ fetch(`${urlWeather}`)
 				 	console.log(data.list[i].temp.min);
 				 	console.log(firstdate);
 				 	document.getElementById("thirddate").innerHTML = seconddate;
-				 	document.getElementById("thirdmin").innerHTML = min_t_temperature;
-				 	document.getElementById("thirdmax").innerHTML = max_t_temperature;
+				 	document.getElementById("thirdmin").innerHTML = min_t_temperature + " \xB0C";
+				 	document.getElementById("thirdmax").innerHTML = max_t_temperature + " \xB0C";
 				 	
 				 	 var min_f_temperature = data.list[3].temp.min;
 				 	 var max_f_temperature = data.list[3].temp.max;
@@ -92,8 +92,8 @@ fetch(`${urlWeather}`)
 				 	dt = dt.setDate(dt.getDate()+3);
 				 	var fourthdate=new Date(dt);
 				 	document.getElementById("fourthdate").innerHTML = seconddate;
-				 	document.getElementById("fourthmin").innerHTML = min_f_temperature;
-				 	document.getElementById("fourthmax").innerHTML = max_f_temperature;
+				 	document.getElementById("fourthmin").innerHTML = min_f_temperature + " \xB0C";
+				 	document.getElementById("fourthmax").innerHTML = max_f_temperature + " \xB0C";
 				 	
 				 	 var min_fv_temperature = data.list[4].temp.min;
 				 	 var max_fv_temperature = data.list[4].temp.max;
@@ -101,8 +101,8 @@ fetch(`${urlWeather}`)
 				 	dt = dt.setDate(dt.getDate()+4);
 				 	var fifthdate=new Date(dt);
 				 	document.getElementById("fifthdate").innerHTML = seconddate;
-				 	document.getElementById("fifthmin").innerHTML = min_fv_temperature;
-				 	document.getElementById("fifthmax").innerHTML = max_fv_temperature;
+				 	document.getElementById("fifthmin").innerHTML = min_fv_temperature + " \xB0C";
+				 	document.getElementById("fifthmax").innerHTML = max_fv_temperature + " \xB0C";
 				 	
 				 }
 			})
